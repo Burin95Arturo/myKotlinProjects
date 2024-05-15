@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Welcome Actions">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="cheers"
+            android:title="Cheers on Start" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="hideimage"
+            android:title="Hide Image" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Functions">
+
+    </PreferenceCategory>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_1"
+        android:title="Add Items Button Available" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="UserId"
+        android:title="Share User Id" />
+</PreferenceScreen>

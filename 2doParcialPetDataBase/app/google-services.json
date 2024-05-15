@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "264208880601",
+    "project_id": "segundoparcialandroid-98ecd",
+    "storage_bucket": "segundoparcialandroid-98ecd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264208880601:android:ae65e62c63312439227fc8",
+        "android_client_info": {
+          "package_name": "com.example.a2doparcialpetdatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264208880601-833ggnuvpb5d56ajc3ft12v6h78aaf8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRA_6dLO6ff3Aqi8BpyQauEhDY2Llbz-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264208880601-833ggnuvpb5d56ajc3ft12v6h78aaf8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264208880601:android:1a7222237dec56f1227fc8",
+        "android_client_info": {
+          "package_name": "com.example.primerparcialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264208880601-833ggnuvpb5d56ajc3ft12v6h78aaf8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRA_6dLO6ff3Aqi8BpyQauEhDY2Llbz-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264208880601-833ggnuvpb5d56ajc3ft12v6h78aaf8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264208880601:android:c1fcee747c77a836227fc8",
+        "android_client_info": {
+          "package_name": "com.example.secondparcialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264208880601-833ggnuvpb5d56ajc3ft12v6h78aaf8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRA_6dLO6ff3Aqi8BpyQauEhDY2Llbz-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264208880601-833ggnuvpb5d56ajc3ft12v6h78aaf8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

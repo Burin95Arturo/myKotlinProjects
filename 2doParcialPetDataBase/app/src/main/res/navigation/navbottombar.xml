@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navbottombar"
+    app:startDestination="@id/petRecyclerFragment">
+
+    <fragment
+        android:id="@+id/petRecyclerFragment"
+        android:name="com.example.a2doparcialpetdatabase.fragments.PetRecyclerFragment"
+        android:label="fragment_pet_recycler"
+        tools:layout="@layout/fragment_pet_recycler" >
+        <action
+            android:id="@+id/action_petRecyclerFragment_to_petInfoFragment"
+            app:destination="@id/petInfoFragment" />
+        <action
+            android:id="@+id/action_petRecyclerFragment_to_addPetFragment"
+            app:destination="@id/addPetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.a2doparcialpetdatabase.fragments.UserInfoFragment"
+        android:label="fragment_user_info"
+        tools:layout="@layout/fragment_user_info" >
+        <action
+            android:id="@+id/action_userInfoFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/petInfoFragment"
+        android:name="com.example.a2doparcialpetdatabase.fragments.PetInfoFragment"
+        android:label="fragment_pet_info"
+        tools:layout="@layout/fragment_pet_info" >
+        <argument
+            android:name="uid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_petInfoFragment_to_petMoreInfoFragment"
+            app:destination="@id/petMoreInfoFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.a2doparcialpetdatabase.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/addPetFragment"
+        android:name="com.example.a2doparcialpetdatabase.fragments.AddPetFragment"
+        android:label="fragment_add_pet"
+        tools:layout="@layout/fragment_add_pet" />
+    <fragment
+        android:id="@+id/petMoreInfoFragment"
+        android:name="com.example.a2doparcialpetdatabase.fragments.PetMoreInfoFragment"
+        android:label="fragment_pet_more_info"
+        tools:layout="@layout/fragment_pet_more_info" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+</navigation>

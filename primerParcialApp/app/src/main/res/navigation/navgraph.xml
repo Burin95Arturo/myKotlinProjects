@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/appFragment">
+
+    <fragment
+        android:id="@+id/appFragment"
+        android:name="com.example.primerparcialapp.fragments.AppFragment"
+        android:label="fragment_app"
+        tools:layout="@layout/fragment_app" >
+        <action
+            android:id="@+id/action_appFragment_to_appDetailedFragment"
+            app:destination="@id/appDetailedFragment" />
+        <action
+            android:id="@+id/action_appFragment_to_addGuitarFragment"
+            app:destination="@id/addGuitarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appDetailedFragment"
+        android:name="com.example.primerparcialapp.fragments.AppDetailedFragment"
+        android:label="fragment_app_detailed"
+        tools:layout="@layout/fragment_app_detailed" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_appDetailedFragment_to_editGuitarFragment"
+            app:destination="@id/editGuitarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.primerparcialapp.fragments.UserInfoFragment"
+        android:label="fragment_user_info"
+        tools:layout="@layout/fragment_user_info" >
+        <action
+            android:id="@+id/action_userInfoFragment_to_settingsActivity"
+            app:destination="@id/settingsActivity" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_editUserInfoFragment"
+            app:destination="@id/editUserInfoFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.example.primerparcialapp.activities.SettingsActivity"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+    <fragment
+        android:id="@+id/editUserInfoFragment"
+        android:name="com.example.primerparcialapp.fragments.EditUserInfoFragment"
+        android:label="fragment_edit_user_info"
+        tools:layout="@layout/fragment_edit_user_info" >
+        <action
+            android:id="@+id/action_editUserInfoFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGuitarFragment"
+        android:name="com.example.primerparcialapp.fragments.AddGuitarFragment"
+        android:label="fragment_add_guitar"
+        tools:layout="@layout/fragment_add_guitar" >
+        <argument
+            android:name="cont"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/editGuitarFragment"
+        android:name="com.example.primerparcialapp.fragments.EditGuitarFragment"
+        android:label="fragment_edit_guitar"
+        tools:layout="@layout/fragment_edit_guitar" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.primerparcialapp.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+</navigation>
